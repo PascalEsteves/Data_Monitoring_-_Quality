@@ -1,0 +1,2 @@
+class LocalConnection:
+    pass

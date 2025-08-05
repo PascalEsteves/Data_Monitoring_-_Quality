@@ -1,0 +1,18 @@
+storage:
+  type: local
+  blob: path_file_in_container
+  aws: path_file_in_s3
+  local: ./data/example.csv
+
+actions:
+  - CheckType:
+      checks:
+        - column: "idade"
+          type: "int"
+        - column: "data_nascimento"
+          type: "datetime"
+  - CheckEnum:
+      column: "sexo"
+      allowed_values: ["M", "F"]
+  - CheckNull:
+      columns: ["nome", "email"]

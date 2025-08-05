@@ -1,0 +1,27 @@
+[
+  {
+    "Action": "Check Type",
+    "Column": "idade",
+    "Invalid_count": 0,
+    "Valid_Column": true,
+    "Details": []
+  },
+  {
+    "Action": "Check Type",
+    "Column": "data_nascimento",
+    "Invalid_count": 0,
+    "Valid_Column": true,
+    "Details": []
+  },
+  {
+    "Action": "Check Enum",
+    "Column": "sexo",
+    "Allowed_values": [
+      "M",
+      "F"
+    ],
+    "Invalid_count": 0,
+    "Valid_Column": true,
+    "Details": []
+  }
+]
