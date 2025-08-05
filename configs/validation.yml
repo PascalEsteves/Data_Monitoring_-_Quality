@@ -15,4 +15,4 @@ actions:
       column: "sexo"
       allowed_values: ["M", "F"]
   - CheckNull:
-      columns: ["nome", "email"]
+      column: ["name", "email"]

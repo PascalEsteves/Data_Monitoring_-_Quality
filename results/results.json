@@ -23,5 +23,19 @@
     "Invalid_count": 0,
     "Valid_Column": true,
     "Details": []
+  },
+  {
+    "Action": "Check Null",
+    "Column": "name",
+    "Invalid_count": 0,
+    "Valid_Column": true,
+    "Details": []
+  },
+  {
+    "Action": "Check Null",
+    "Column": "email",
+    "Invalid_count": 0,
+    "Valid_Column": true,
+    "Details": []
   }
 ]

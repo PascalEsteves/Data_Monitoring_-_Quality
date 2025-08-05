@@ -20,8 +20,6 @@ class CheckType(ValidationAction):
             self.validate_column_exist(column=col)
 
             def is_valid_type(x):
-                if pd.isna(x):
-                    return True
                 if type in ["datetime", "date"]:
                     if isinstance(x, self.TYPE_MAP[type]):
                         return True

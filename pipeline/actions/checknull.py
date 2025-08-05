@@ -6,9 +6,10 @@ class CheckNull(ValidationAction):
     action_name = "Check Null"
 
     def run(self):
-        for check in self.params.get("checks", []):
-            col:str = check.get("column")
-            self.validate_column_exist(column=col)
+   
+        cols:str = self.params["column"]
+        for col in cols:
+            self.validate_column_exist(col)
 
             invalid = self.df[self.df[col].isnull() | (self.df[col].astype(str).str.strip() == "")]
             self.report({
