@@ -25,16 +25,20 @@ This project implements a system for **validating and monitoring data quality** 
    cd Data_Monitoring_-_Quality
    
 2. Create and activate virtual environment
-python -m venv venv
-source venv/bin/activate  # On Windows: venv\Scripts\activate
+    ```bash
+    python -m venv venv
+    source venv/bin/activate  # On Windows: venv\Scripts\activate
 
 3. Install Dependencies
-pip install -r requirements.txt
+    ```bash
+    pip install -r requirements.txt
 
 
 ## How to use
 
 1. Define validation rules in the config.yaml ( example in configs/validation.yaml)
-2. Run Script : python run_validation.py -p "path_to_config.yaml'
+2. Run Script
+    ```bash 
+    python run_validation.py -p "path_to_config.yaml'
 3. Check Results in results/results.json
 
